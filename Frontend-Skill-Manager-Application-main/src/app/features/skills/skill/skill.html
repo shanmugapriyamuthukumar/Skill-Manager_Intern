@@ -1,0 +1,11 @@
+<h3>Skill Management</h3>
+
+<input [(ngModel)]="skillName" placeholder="Skill Name">
+<button (click)="addSkill()">Add</button>
+
+<ul>
+  <li *ngFor="let s of skills">
+    {{s.name}}
+    <button (click)="deleteSkill(s.id)">Delete</button>
+  </li>
+</ul>
