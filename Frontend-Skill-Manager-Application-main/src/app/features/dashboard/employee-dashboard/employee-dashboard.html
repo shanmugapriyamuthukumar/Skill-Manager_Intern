@@ -1,3 +1,22 @@
-<p>employee-dashboard works!</p>
-<!--<h2>Employee Dashboard</h2>
-    <p>Welcome Employee</p>  -->
+<div class="dashboard-container">
+  <h2>Employee Dashboard</h2>
+
+  <section class="profile">
+    <p><strong>Name:</strong> {{ userName }}</p>
+    <p><strong>Employee ID:</strong> {{ employeeId }}</p>
+  </section>
+
+  <section class="project">
+    <p><strong>Project:</strong> {{ projectName }}</p>
+    <p><strong>Project ID:</strong> {{ projectId }}</p>
+  </section>
+
+  <section class="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li *ngFor="let skill of skills">
+        {{ skill.skillName }} (Proficiency: {{ skill.proficiency }})
+      </li>
+    </ul>
+  </section>
+</div>
