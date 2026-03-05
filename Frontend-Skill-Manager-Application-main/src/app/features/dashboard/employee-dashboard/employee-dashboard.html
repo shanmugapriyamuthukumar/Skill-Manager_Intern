@@ -1,22 +1,49 @@
-<div class="dashboard-container">
-  <h2>Employee Dashboard</h2>
+<div class="employee-shell">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <nav class="menu">
+        <a class="menu-single" href="#">Add Skills</a>
+        <a class="menu-single" href="#">Project Skill-check</a>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </aside>
 
-  <section class="profile">
-    <p><strong>Name:</strong> {{ userName }}</p>
-    <p><strong>Employee ID:</strong> {{ employeeId }}</p>
-  </section>
+  <!-- Content -->
+  <main class="content">
+    <header class="page-header">
+      <div class="header-left">
+        <div class="avatar">E</div>
+        <div class="welcome-block">
+          <div class="welcome-line">Welcome, {{ userName }} ({{ employeeId }})</div>
+          <div class="project-line">Project: {{ projectName }} ({{ projectId }})</div>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="brand">Skill-Sync</span>
+      </div>
+    </header>
 
-  <section class="project">
-    <p><strong>Project:</strong> {{ projectName }}</p>
-    <p><strong>Project ID:</strong> {{ projectId }}</p>
-  </section>
-
-  <section class="skills">
-    <h3>Skills</h3>
-    <ul>
-      <li *ngFor="let skill of skills">
-        {{ skill.skillName }} (Proficiency: {{ skill.proficiency }})
-      </li>
-    </ul>
-  </section>
+    <section>
+      <h3>Skills</h3>
+      <table class="skills-table">
+        <thead>
+          <tr>
+            <th>Skill ID</th>
+            <th>Skill Name</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let skill of skills">
+            <td>{{ skill.skillId }}</td>
+            <td>{{ skill.skillName }}</td>
+            <td>{{ skill.proficiency }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 </div>

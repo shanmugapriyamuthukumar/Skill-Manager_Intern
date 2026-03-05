@@ -1,17 +1,116 @@
-.dashboard-container {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 15px;
+.employee-shell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background: #0b0d12;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #0f4bc4;
+  border-radius: 14px 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 18px 16px;
+}
+.menu-single {
+  color: #e9efff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-radius: 10px;
+  display: block;
+}
+.menu-single:hover {
+  background: #0c3c9b;
+}
+.sidebar-spacer {
+  flex: 1 1 auto;
+}
+.logout-btn {
+  background: #2465ea; /* blue button */
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: auto;
+}
+.logout-btn:hover {
+  background: #1b55cc;
+}
+
+/* Content */
+.content {
+  background: #ffffff;
+  border-radius: 0 14px 14px 0;
+  padding: 18px;
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.10);
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e7ecff, #c7d3ff);
+  color: #123f9b;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+.welcome-block {
+  display: flex;
+  flex-direction: column;
+}
+.welcome-line {
+  color: #344054;
+  font-size: 0.98rem;
+}
+.project-line {
+  color: #344054;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+.brand {
+  color: #123f9b;
+  font-weight: 800;
+  font-size: 1.4rem; /* bigger font */
+}
+
+/* Skills table */
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.skills-table th {
+  background-color: #2465ea;
+  color: white;
+  padding: 10px;
+}
+.skills-table td {
+  background-color: #f2f2f2;
+  padding: 8px;
   border: 1px solid #ddd;
-  border-radius: 6px;
-  font-family: Arial, sans-serif;
 }
-
-h2 {
-  text-align: center;
-  color: #2c3e50;
-}
-
-section {
-  margin-bottom: 15px;
+.skills-table tr:nth-child(even) td {
+  background-color: #e6e6e6;
 }
