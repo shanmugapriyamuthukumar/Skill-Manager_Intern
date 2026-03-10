@@ -1,10 +1,11 @@
 package com.example.sms.project;
 
 import com.example.sms.employeeskill.EmployeeSkillRepository;
+
 import com.example.sms.project.dto.ProjectCreateRequest;
 import com.example.sms.project.dto.ProjectRequiredSkillRequest;
 import com.example.sms.project.dto.SkillGapResponse;
-import com.example.sms.skill.SkillRepository;
+import com.example.sms.skills.SkillRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

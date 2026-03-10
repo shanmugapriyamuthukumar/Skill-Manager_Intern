@@ -1,6 +1,6 @@
 package com.example.sms.project;
 
-import com.example.sms.skill.Skill;
+import com.example.sms.skills.Skill;
 import jakarta.persistence.*;
 import lombok.*;
 

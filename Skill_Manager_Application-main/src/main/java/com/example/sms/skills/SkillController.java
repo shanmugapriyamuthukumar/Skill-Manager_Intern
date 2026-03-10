@@ -1,4 +1,4 @@
-package com.example.sms.skill;
+package com.example.sms.skills;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

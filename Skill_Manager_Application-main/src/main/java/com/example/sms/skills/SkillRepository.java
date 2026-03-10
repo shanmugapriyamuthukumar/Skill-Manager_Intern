@@ -1,4 +1,4 @@
-package com.example.sms.skill;
+package com.example.sms.skills;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

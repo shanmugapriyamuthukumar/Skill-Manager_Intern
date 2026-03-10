@@ -1,6 +1,6 @@
 package com.example.sms.employeeskill;
 
-import com.example.sms.skill.SkillRepository;
+import com.example.sms.skills.SkillRepository;
 import com.example.sms.user.User;
 import com.example.sms.user.UserRepository;
 import com.example.sms.util.ValidationUtil;
